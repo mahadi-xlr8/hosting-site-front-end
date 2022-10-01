@@ -376,7 +376,18 @@ opacity: 0.8;
 }
 
 
+/* quote */
 
+.quote__text{
+  font-style: italic;
+}
+
+.quote__text::before{
+  content: open-quote;
+}
+.quote__text::after{
+  content: close-quote;
+}
 
 
 

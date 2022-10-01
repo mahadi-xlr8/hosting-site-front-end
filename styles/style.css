@@ -389,5 +389,36 @@ opacity: 0.8;
   content: close-quote;
 }
 
+.quote__author{
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-style: normal;
+}
+.quote__organizetion{
+  color: var(--color-headings);
+  opacity: 0.4;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.quote__line{
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and (min-width:1024px){
+  .quote__author{
+    font-size: 2.4rem;
+  }
+  .quote__text{
+    font-size: 2rem;
+  }
+  .quote__organizetion{
+    font-size: 1.6rem;
+  }
+  
+}
+
 
 

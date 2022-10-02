@@ -226,6 +226,11 @@ a {
   display: inline-block;
 }
 
+.btn--long{
+padding-left: 6rem;
+padding-right: 6rem;
+}
+
 .btn--outline {
   border: 0.2rem solid var(--color-headings);
   color: var(--color-headings);
@@ -466,4 +471,42 @@ top: 3rem;
 
 }
 
+/*  */
 
+.flow{
+  border-radius: 10px;
+  padding: 3rem;
+
+}
+.flow--primary{
+  background-color: var(--color-primary);
+}
+.flow__heading{
+  font-size: 3.5rem;
+  color: #fff;
+  margin-top: 0;
+}
+.flow__text{
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+.flow .btn{
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width:768px){
+  .flow__text{
+    text-align: left;
+  }
+  .flow.grid-1x2{
+    grid-template-columns: 1fr auto; 
+  }
+  .flow .btn{
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  
+  
+}

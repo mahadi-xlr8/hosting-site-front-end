@@ -156,7 +156,7 @@ a {
   width: 40px;
 }
 
-.icon--small{
+.icon--small {
   height: 30px;
   width: 30px;
 }
@@ -175,11 +175,11 @@ a {
   width: 64px;
 }
 
-.icon-container--accent{
+.icon-container--accent {
   background-color: var(--color-accent);
 }
 
-.icon--white{
+.icon--white {
   fill: #fff;
 }
 
@@ -226,9 +226,9 @@ a {
   display: inline-block;
 }
 
-.btn--long{
-padding-left: 6rem;
-padding-right: 6rem;
+.btn--long {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn--outline {
@@ -443,70 +443,96 @@ padding-right: 6rem;
 
 /* testimonial */
 
-.testimonial{
+.testimonial {
   padding: 3rem;
 }
 .testimonial__image > img {
   width: 100%;
 }
-.testimonial__image{
+.testimonial__image {
   position: relative;
 }
 
-.testimonial__icon{
-position: absolute;
-right: -32px;
-top: 3rem;
+.testimonial__icon {
+  position: absolute;
+  right: -32px;
+  top: 3rem;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
   .testimonial .quote__text,
-  .testimonial .quote__author{
+  .testimonial .quote__author {
     font-size: 2.4rem;
   }
-  .testimonial .quote{
+  .testimonial .quote {
     margin-left: 6rem;
     margin-bottom: 0;
   }
-
 }
 
-/*  */
+/* flow */
 
-.flow{
+.flow {
   border-radius: 10px;
   padding: 3rem;
-
 }
-.flow--primary{
+.flow--primary {
   background-color: var(--color-primary);
 }
-.flow__heading{
+.flow__heading {
   font-size: 3.5rem;
   color: #fff;
   margin-top: 0;
 }
-.flow__text{
+.flow__text {
   color: #fff;
   font-size: 2rem;
   text-align: center;
 }
-.flow .btn{
+.flow .btn {
   align-self: center;
   justify-self: center;
 }
 
-@media screen and (min-width:768px){
-  .flow__text{
+@media screen and (min-width: 768px) {
+  .flow__text {
     text-align: left;
   }
-  .flow.grid-1x2{
-    grid-template-columns: 1fr auto; 
+  .flow.grid-1x2 {
+    grid-template-columns: 1fr auto;
   }
-  .flow .btn{
+  .flow .btn {
     justify-self: start;
     margin: 0 2rem;
   }
-  
-  
 }
+
+/* block */
+.block {
+  padding: 6rem 2rem;
+}
+.block__header {
+  margin-top: 0;
+}
+.block__header {
+  text-align: center;
+}
+
+.block--dark {
+  background-color: black;
+  color: #7b858b;
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(6rem + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed-left{
+  padding-bottom: calc(10rem);
+  clip-path: polygon(0% 0%,100% 0%, 100% 80%, 0% 100%);
+}
+
+

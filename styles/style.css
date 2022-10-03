@@ -199,6 +199,12 @@ a {
   white-space: nowrap;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
 .btn--accent {
   background-color: var(--color-accent);
   color: white;
@@ -271,7 +277,7 @@ a {
 .input-group input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -536,6 +542,11 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* collapsible */
 
 .collapsible__header {
@@ -571,7 +582,6 @@ a {
 
 /* navigation */
 
-
 .nav {
   display: flex;
   background-color: #000;
@@ -594,74 +604,92 @@ a {
 .nav__item > a:hover {
   color: #fff;
 }
-.nav__icon{
+.nav__icon {
   opacity: 0.5;
   transition: all 0.3s;
   cursor: pointer;
 }
-.collapsible--expanded .nav__icon{
+.collapsible--expanded .nav__icon {
   opacity: 1;
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
-.nav__item{
+.nav__item {
   border-bottom: 1px solid #222;
   padding: 0.5rem 2rem;
 }
 
-.nav__brand{
+.nav__brand {
   transform: translateY(5px);
 }
 
-
-
-
-@media screen and (min-width:1024px){
-
-  .nav__icon{
+@media screen and (min-width: 1024px) {
+  .nav__icon {
     display: none;
   }
 
-  .nav__list{
+  .nav__list {
     width: auto;
     display: flex;
     font-size: 1.6rem;
     max-height: 100%;
     opacity: 1;
   }
-  .nav__item{
+  .nav__item {
     border: 0;
   }
-  
 }
-
 
 /* hero */
 
-.hero{
+.hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
-.hero__banner{
+.hero__banner {
   width: 100%;
 }
-.hero__tagline{
+.hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
 }
 
-
-@media screen and (min-width:768px){
-
-  .hero__content{
+@media screen and (min-width: 768px) {
+  .hero__content {
     text-align: left;
     align-self: center;
   }
-  .hero{
+  .hero {
     padding-top: 0;
   }
+}
 
+/* domain block */
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 680px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template:repeat(2,6rem)/repeat(3,1fr) ;
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 700px;
+margin: 0 auto;
+}
+
+
+@media screen and (min-width:768px){
+
+  .block-domain__prices{
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  }
   
 }

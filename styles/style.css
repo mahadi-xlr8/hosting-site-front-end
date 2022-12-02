@@ -193,7 +193,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -278,6 +278,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -496,9 +497,11 @@ a {
 .flow {
   border-radius: 10px;
   padding: 3rem;
+
 }
 .flow--primary {
   background-color: var(--color-primary);
+  color: #fff;
 }
 .flow__heading {
   font-size: 3.5rem;
@@ -554,7 +557,7 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(6rem + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 .block--skewed-left {
   padding-bottom: calc(10rem);
@@ -700,12 +703,14 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+  /* grid-template: repeat(3, 6rem) / repeat(2, 1fr); */
+  grid-template-columns: repeat(2,1fr);
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+  gap: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -797,6 +802,7 @@ a {
 
 .footer{
   background-color: #232323;
+  padding-top: 10rem;
 }
 
 .footer__section{
@@ -806,6 +812,7 @@ a {
 .footer__heading{
   text-transform: uppercase;
   font-weight: 600;
+
 }
 
 .footer__brand{
@@ -863,4 +870,10 @@ a {
     font-size: 1.6rem;
   }
   
+}
+
+/* sign-up callout */
+
+.flow-signup{
+  transform: translateY(5rem);
 }
